@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-pqrm
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0-7-tenant/tkwch-fix-0075-0072-app/devfile-sample-pqrm@sha256:85cb70128b695c56120fa4ae368f2ad7fc4e51f7109126cf6d32d35c97a3b593
+        name: my-nodejs
+        resources: {}
+status: {}
